@@ -14,15 +14,6 @@
 	
 	<link rel="shortcut icon" type="image/png" href="favicon.jpg">
 
-	<!--opengraph tags for location or address for information panel in google-->
-	<!-- <meta name="og:latitude" content="45.750000" />
-	<meta name="og:longitude" content="4.850000" />
-	<meta name="og:street-address" content="2, Place Sathonay" />
-	<meta name="og:locality" content="#" />
-	<meta name="og:region" content="Rôhnes-Alpes" />
-	<meta name="og:postal-code" content="69001" />
-	<meta name="og:country-name" content="France" /> -->
-
 	<!--search engine verification-->
 	<meta name="google-site-verification" content="#" />
 	<meta name="yandex-verification" content="#" />
@@ -33,10 +24,12 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
-	<link href="//db.onlinewebfonts.com/c/4959f2391ac29c64fa01bbbd33733091?family=Kingthings+Petrock" rel="stylesheet" type="text/css"/> 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<script defer src="./js/blocs.js"></script>
+	<script defer src="./js/jquery.touchSwipe.js"></script>
+	<script defer src="./js/gmaps.js"></script>
 
 
 <!-- Analytics -->
@@ -54,7 +47,7 @@
 
 			<nav class="navbar row">
 				<div class="navbar-header">
-					<a class="navbar-brand" href="index.html"><img src="./img/logo-transparent-la-chouette-agence.png" alt="logo transparent la chouette agence entreprise web design web développeur Lyon" height="50"/><span style="font-family: 'Kingthings Petrock'; font-size: 36px;">La chouette agence</span></a>
+					<a class="navbar-brand" href="index.html"><img src="./img/logo-transparent-la-chouette-agence.png" alt="logo transparent la chouette agence entreprise web design web développeur Lyon" height="50"/><span class="titre-en-tete">La chouette agence</span></a>
 					<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 						<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 					</button>
@@ -93,7 +86,7 @@
 		<div class="container bloc-md">
 			<div class="row">
 				<div class="col-sm-12 text-center">
-					<p>La chouette agence est une agence de web design qui aide les entreprise à devenir 
+					<p class="texte-sur-icones">La chouette agence est une agence de web design qui aide les entreprise à devenir 
 					   attractives et visibles sur internet</p>
 				</div>
 			</div>
@@ -126,7 +119,8 @@
 			<div class="row voffset-lg voffset">
 				<div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
 					<blockquote cite="#">
-						<p>La chouette agence est une excellente agence web! Les designers web ont réussi à capturer l'essence 
+						
+						<p id="citation-text"> <span class="quote-symbol">&#8221;</span>La chouette agence est une excellente agence web! Les designers web ont réussi à capturer l'essence 
 							de notre entreprise et à l'intégrer à notre site. Cela nous a aidé à doubler nos ventes en ligne à Lyon.</p>
 						<footer>Maxime Guibard, <cite>PDG de &Agrave; vos fourchettes</cite></footer>
 					</blockquote>
@@ -167,7 +161,7 @@
 					<a href="#" data-lightbox="./img/catalogues-la-chouette-agence.jpg" data-gallery-id="gallery-1" 
 					   data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb">
 					   <img src="./img/catalogues-la-chouette-agence.jpg" 
-							 alt="paris web design logo agence web meilleure agence et refonte site web journal" 
+							 alt="la chouette agence web design  et web designer refonte site web journal" 
 							 class="img-responsive portfolio-thumb" />
 					</a>
 					<h3 class="mg-md text-center">Refonte d'un site web pour un journal local</h3>
@@ -178,7 +172,7 @@
 					   data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb">
 					   <img src="./img/photographe-la-chouette-agence.jpg" 
 							class="img-responsive portfolio-thumb" 
-							alt="paris web design logo agence web meilleure agence, Création d'un site web pour photographes" />
+							alt="la chouette agence web design  et web designer création d'un site web pour photographes" />
 					</a>
 					<h3 class="mg-md text-center">Création d'un site web pour photographes</h3>
 					<p class="text-center">Nous avons conçu la plateforme idéale pour laisser place aux clichés des photographes.</p>
@@ -190,7 +184,7 @@
 					   data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb">
 					   <img src="./img/appareils-photo-la-chouette-agence.png" 
 							class="img-responsive portfolio-thumb" 
-							alt="paris web design logo agence web meilleure agence, Création d'un site web pour voyageur"/>
+							alt="la chouette agence web design agence développement web designer création d'un site web pour voyageur"/>
 					</a>
 					<h3 class="mg-md text-center">Création d'un site internet pour un voyageur</h3>
 					<p class="text-center">Nous avons élaboré un site internet et des illustrations pour sublimer les vidéos et les articles de ce voyageur.</p>
@@ -200,7 +194,7 @@
 					   data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb">
 					   <img src="./img/developpeurs-web-la-chouette-agence.png" 
 					  	    class="img-responsive portfolio-thumb" 
-					   	    alt="paris web design logo agence web meilleure agence, Création d'un site web pour agence de mariage" />
+					   	    alt="la chouette agence web design  et web designer création d'un site web pour agence de mariage" />
 					</a>
 					<h3 class="mg-md text-center">Conception d'un site pour une agence de mariage</h3>
 					<p class="text-center">Nous avons travaillé avec cette agence pour créer un site internet permettant la présentation détaillée de leurs prestations.</p>
@@ -214,7 +208,7 @@
 	<div class="bloc bgc-dark-slate-blue bg-banniere d-bloc bloc-bg-texture texture-paper" id="bloc-5-cta">
 		<div class="container bloc-lg">
 			<div class="row">
-				<h2 class="mg-md text-center tc-white">Prêt pour redonner vie à votre projet ?<br>Contactez notre équipe !</h2>
+				<h2 class="mg-md text-center tc-white eclairage">Prêt pour redonner vie à votre projet ?<br>Contactez notre équipe !</h2>
 				<div class="col-sm-12 text-center">
 					<a href="./contact.html" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contact</a>
 				</div>
@@ -260,12 +254,5 @@
 </div>
 <!-- Principal conteneur END -->
 	
-
-<!-- <script src="./js/jquery-2.1.0.js"></script> -->
-<!-- <script src="./js/bootstrap.js"></script> -->
-<script src="./js/blocs.js"defer></script>
-<script src="./js/jquery.touchSwipe.js" defer></script>
-<script src="./js/gmaps.js" defer></script>
-
 </body>
 </html>
